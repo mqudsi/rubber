@@ -10,9 +10,9 @@ XDV using XeTeX.
 from rubber import _, msg
 
 def setup(doc, context):
-    doc.vars['program'] = 'xetex'
-    doc.vars['engine'] = 'XeTeX'
-    if 'opt' in context and context['opt'] == 'xdv':
+        doc.vars['program'] = 'xetex'
+        doc.vars['engine'] = 'XeTeX'
+        if 'opt' in context and context['opt'] == 'xdv':
 		mode_xdv()
 	else:
 		mode_pdf()
